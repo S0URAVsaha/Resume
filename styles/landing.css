@@ -1,0 +1,257 @@
+@import "normalizer.css";
+body{
+  background-image: url("../icons/images556YWKJ2.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+  background-size:cover;
+}
+
+.leftmargin{
+  width: 40%;
+  height: auto;
+  float: left;
+  left: 0;
+}
+.wrap{
+  position: fixed;
+  margin: 150px auto;
+  margin-left: 150px;
+  width: 320px;
+}
+
+.circle{
+  position: relative;
+  //overflow: hidden;
+  width: 392px;
+  height: 392px;
+  border-radius: 50%;
+  background: #3CB371;
+  box-shadow: 60px -60px 0 2px @color, -60px -60px 0 2px @color, -60px 60px 0 2px @color, 60px 60px 0 2px @color, 0 0 0 2px #E94E3D;
+  transition: width 2s, height 2s, transform 2s;
+}
+.both:hover .circle{
+  //transform: rotate(90deg);
+}
+.both:hover .icon{
+  //transform: rotate(-90deg);
+}
+.center-circle{
+  position: relative;
+  //overflow: hidden;
+  top:135px;
+  left:135px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #fff;
+}
+.icon{
+  position: absolute;
+  display: block;
+  color:#191818;
+  text-decoration: none;
+  font-size: 19px;
+  font-weight: bold;
+  font-family: Arial;
+  transition: width 2s, height 2s, transform 2s;
+}
+.icon:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -5px;
+  transition: 0.5s;
+}
+.icon:hover{
+  //padding-right: 10px;
+}
+.icon:hover:after {
+  opacity: 1;
+  right: -10px;
+}
+
+/*up*/
+.i1{
+  margin-top: 60px;
+  margin-left: 160px;
+}
+/*login*/
+.i2{
+  top: 185px;
+  left: 20px;
+}
+/*about*/
+.i3{
+  bottom: 50px;
+  left: 160px;
+}
+/*resister*/
+.i4{
+  top: 185px;
+  right: 10px;
+}
+
+.text{
+  position: absolute;
+  top: 120px;
+  left: 100px;
+  width: 60px;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font: 18px sans-serif;
+  transition: opacity .2s ease;
+}
+/*End of left margin*/
+
+.rightmargin{
+  position: relative;
+  width: 57%;
+  min-height: 440px;
+ // background-color: #ccc;
+  //padding: 20px;
+  //border-radius: 5px;
+  float: right;
+  color: white;
+  margin: auto;
+  opacity: 1;
+    filter: alpha(opacity=50); 
+  -webkit-animation: mymove 3s;  /* Safari 4.0 - 8.0 */
+  -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+  animation: mymove 3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+@keyframes mymove {
+  from {left: 0%;}
+  to {left: 1%;}
+}
+
+#home_div{
+  margin: auto;
+  font-family: arial;
+  padding-top: 80px;
+  margin-left: 10%;
+}
+.home-screen{
+  width: 400px;
+  min-height: 500px;
+    padding: 20px;
+  //background-color: white;
+    border-radius: 5px;
+
+}
+/*end of home div*/
+
+#login_div{
+  //box-sizing: border-box;
+  font-family: Arial;
+  //background-color: #3498DB;
+  padding-top: 80px;
+  margin-left: 10%;
+}
+.login {
+  margin:  auto;
+}
+.login-screen {
+  width: 400px;
+  height: 450px;
+  background-color: #FFF;
+  //padding: 20px;
+  border-radius: 5px
+}
+
+.app-title {
+  text-align: left;
+  color: #777;
+  padding-top: 5px;
+}
+
+.login-form {
+  text-align: left;
+}
+.control-group {
+  margin-bottom: 25px;
+}
+
+input {
+  text-align: left;
+  background-color: #ECF0F1;
+  border: 2px solid transparent;
+  border-radius: 3px;
+  font-size: 16px;
+  font-weight: 200;
+  padding: 10px 0;
+  height: 700px;
+  width: 800px;
+  transition: border .5s;
+}
+
+input:focus {
+  border: 2px solid #3CB371;
+  box-shadow: none;
+}
+.btn {
+  border: 2px solid transparent;
+  background: #3CB371;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 25px;
+  padding: 10px 0;
+  text-decoration: none;
+  text-shadow: none;
+  border-radius: 3px;
+  box-shadow: none;
+  transition: 0.25s;
+  display: block;
+  width: 350px;
+  margin: 0 auto;
+}
+
+.btn:hover {
+  background-color: #4CAF65;
+}
+
+.login-link {
+  font-size: 12px;
+  color: #444;
+  display: block;
+  margin-top: 12px;
+}
+/*End of login*/
+
+#register_div{
+  margin: auto;
+  font-family: Arial;
+  //background-color: #3CB371;
+  padding-top: 80px;
+  margin-left: 10%;
+}
+.register-screen{
+  width: 800px;
+  min-height: 500px;
+  padding: 20px;
+  //background-color: white;
+  border-radius: 5px;
+}
+.register-form{
+  text-align: center;
+}
+/*end of registration*/
+
+#about_div{
+  margin: auto;
+  font-family: arial;
+  padding-top: 80px;
+  margin-left: 10%;
+}
+.about-screen{
+  width: 800px;
+  min-height: 500px;
+  padding: 20px;
+  //background-color: white;
+  border-radius: 5px;
+}
+/*end of about*/
