@@ -132,7 +132,7 @@ body{
 #home_div{
   margin: auto;
   font-family: arial;
-  padding-top: 80px;
+  padding-top: 50px;
   margin-left: 10%;
 }
 .home-screen{
@@ -149,7 +149,7 @@ body{
   //box-sizing: border-box;
   font-family: Arial;
   //background-color: #3498DB;
-  padding-top: 80px;
+  padding-top: 50px;
   margin-left: 10%;
 }
 .login {
@@ -226,11 +226,11 @@ input:focus {
   margin: auto;
   font-family: Arial;
   //background-color: #3CB371;
-  padding-top: 80px;
-  margin-left: 10%;
+  padding-top:0%;
+  margin-left: 8%;
 }
 .register-screen{
-  width: 800px;
+  width: 650px;
   min-height: 500px;
   padding: 20px;
   //background-color: white;
@@ -244,11 +244,11 @@ input:focus {
 #about_div{
   margin: auto;
   font-family: arial;
-  padding-top: 80px;
+  padding-top: 50px;
   margin-left: 10%;
 }
 .about-screen{
-  width: 800px;
+  width: 500px;
   min-height: 500px;
   padding: 20px;
   //background-color: white;
